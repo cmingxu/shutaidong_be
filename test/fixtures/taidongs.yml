@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  happened_at: 2014-02-11 21:27:02
+  account_id: 1
+  batch_id: MyString
+
+two:
+  happened_at: 2014-02-11 21:27:02
+  account_id: 1
+  batch_id: MyString

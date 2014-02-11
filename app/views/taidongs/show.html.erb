@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Happened at:</strong>
+  <%= @taidong.happened_at %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @taidong.account_id %>
+</p>
+
+<p>
+  <strong>Batch:</strong>
+  <%= @taidong.batch_id %>
+</p>
+
+<%= link_to 'Edit', edit_taidong_path(@taidong) %> |
+<%= link_to 'Back', taidongs_path %>

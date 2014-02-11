@@ -1,0 +1,31 @@
+<h1>Listing taidongs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Happened at</th>
+      <th>Account</th>
+      <th>Batch</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @taidongs.each do |taidong| %>
+      <tr>
+        <td><%= taidong.happened_at %></td>
+        <td><%= taidong.account_id %></td>
+        <td><%= taidong.batch_id %></td>
+        <td><%= link_to 'Show', taidong %></td>
+        <td><%= link_to 'Edit', edit_taidong_path(taidong) %></td>
+        <td><%= link_to 'Destroy', taidong, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Taidong', new_taidong_path %>
